@@ -1,0 +1,1474 @@
+[
+    {
+        "english": "abandon",
+        "japanese": "捨てる、断念する"
+    },
+    {
+        "english": "abbreviate",
+        "japanese": "省略する"
+    },
+    {
+        "english": "abide",
+        "japanese": "我慢する、従う"
+    },
+    {
+        "english": "abolish",
+        "japanese": "廃止する"
+    },
+    {
+        "english": "abound",
+        "japanese": "豊富にある"
+    },
+    {
+        "english": "abrupt",
+        "japanese": "突然の"
+    },
+    {
+        "english": "absurd",
+        "japanese": "不合理な"
+    },
+    {
+        "english": "abundance",
+        "japanese": "豊富"
+    },
+    {
+        "english": "abuse",
+        "japanese": "乱用する、虐待する"
+    },
+    {
+        "english": "accelerate",
+        "japanese": "加速する"
+    },
+    {
+        "english": "accessible",
+        "japanese": "接近できる、利用可能な"
+    },
+    {
+        "english": "accomodate",
+        "japanese": "収容する、適応させる"
+    },
+    {
+        "english": "accompany",
+        "japanese": "同行する"
+    },
+    {
+        "english": "accumulate",
+        "japanese": "蓄積する"
+    },
+    {
+        "english": "accustom",
+        "japanese": "慣れさせる"
+    },
+    {
+        "english": "acknowledge",
+        "japanese": "認める"
+    },
+    {
+        "english": "acquaint",
+        "japanese": "知らせる"
+    },
+    {
+        "english": "acquire",
+        "japanese": "獲得する"
+    },
+    {
+        "english": "acute",
+        "japanese": "鋭い、急性の"
+    },
+    {
+        "english": "adapt",
+        "japanese": "適応させる"
+    },
+    {
+        "english": "addict",
+        "japanese": "中毒にさせる"
+    },
+    {
+        "english": "adequate",
+        "japanese": "十分な"
+    },
+    {
+        "english": "adhere",
+        "japanese": "固守する"
+    },
+    {
+        "english": "adjacent",
+        "japanese": "隣接した"
+    },
+    {
+        "english": "administer",
+        "japanese": "管理する"
+    },
+    {
+        "english": "adolescent",
+        "japanese": "思春期の"
+    },
+    {
+        "english": "adopt",
+        "japanese": "採用する"
+    },
+    {
+        "english": "adore",
+        "japanese": "崇拝する"
+    },
+    {
+        "english": "advocate",
+        "japanese": "主張する、支持する"
+    },
+    {
+        "english": "affection",
+        "japanese": "愛情"
+    },
+    {
+        "english": "afflict",
+        "japanese": "苦しめる"
+    },
+    {
+        "english": "affluent",
+        "japanese": "裕福な"
+    },
+    {
+        "english": "agenda",
+        "japanese": "議題"
+    },
+    {
+        "english": "aggravate",
+        "japanese": "悪化させる"
+    },
+    {
+        "english": "aggregate",
+        "japanese": "集合する、総計の"
+    },
+    {
+        "english": "agony",
+        "japanese": "苦悩"
+    },
+    {
+        "english": "alienate",
+        "japanese": "遠ざける"
+    },
+    {
+        "english": "allay",
+        "japanese": "静める"
+    },
+    {
+        "english": "allege",
+        "japanese": "主張する"
+    },
+    {
+        "english": "alleviate",
+        "japanese": "軽減する"
+    },
+    {
+        "english": "alliance",
+        "japanese": "同盟"
+    },
+    {
+        "english": "allocate",
+        "japanese": "割り当てる"
+    },
+    {
+        "english": "allude",
+        "japanese": "ほのめかす"
+    },
+    {
+        "english": "allure",
+        "japanese": "魅了する"
+    },
+    {
+        "english": "ally",
+        "japanese": "同盟国"
+    },
+    {
+        "english": "alter",
+        "japanese": "変える"
+    },
+    {
+        "english": "alternate",
+        "japanese": "交互の"
+    },
+    {
+        "english": "alternative",
+        "japanese": "代わりの"
+    },
+    {
+        "english": "altitude",
+        "japanese": "高度"
+    },
+    {
+        "english": "amateur",
+        "japanese": "素人"
+    },
+    {
+        "english": "ambarass",
+        "japanese": "当惑させる (embarrass)"
+    },
+    {
+        "english": "ambiguous",
+        "japanese": "曖昧な"
+    },
+    {
+        "english": "ambition",
+        "japanese": "野心"
+    },
+    {
+        "english": "amend",
+        "japanese": "修正する"
+    },
+    {
+        "english": "amplify",
+        "japanese": "増幅する"
+    },
+    {
+        "english": "analogy",
+        "japanese": "類推"
+    },
+    {
+        "english": "analyse",
+        "japanese": "分析する"
+    },
+    {
+        "english": "anarchy",
+        "japanese": "無政府状態"
+    },
+    {
+        "english": "anchor",
+        "japanese": "錨"
+    },
+    {
+        "english": "anguish",
+        "japanese": "苦悩"
+    },
+    {
+        "english": "animate",
+        "japanese": "活気づける"
+    },
+    {
+        "english": "annihilate",
+        "japanese": "全滅させる"
+    },
+    {
+        "english": "annoy",
+        "japanese": "悩ます"
+    },
+    {
+        "english": "annual",
+        "japanese": "毎年の"
+    },
+    {
+        "english": "anonymous",
+        "japanese": "匿名の"
+    },
+    {
+        "english": "antagonize",
+        "japanese": "敵に回す"
+    },
+    {
+        "english": "anticipate",
+        "japanese": "予想する"
+    },
+    {
+        "english": "antique",
+        "japanese": "骨董品の"
+    },
+    {
+        "english": "anxiety",
+        "japanese": "心配"
+    },
+    {
+        "english": "apathy",
+        "japanese": "無関心"
+    },
+    {
+        "english": "apologize",
+        "japanese": "謝罪する"
+    },
+    {
+        "english": "appall",
+        "japanese": "ぞっとさせる"
+    },
+    {
+        "english": "apparatus",
+        "japanese": "器具"
+    },
+    {
+        "english": "apparent",
+        "japanese": "明らかな"
+    },
+    {
+        "english": "appeal",
+        "japanese": "訴える"
+    },
+    {
+        "english": "appease",
+        "japanese": "なだめる"
+    },
+    {
+        "english": "appendix",
+        "japanese": "付録、盲腸"
+    },
+    {
+        "english": "appetite",
+        "japanese": "食欲"
+    },
+    {
+        "english": "applaud",
+        "japanese": "拍手喝采する"
+    },
+    {
+        "english": "apply",
+        "japanese": "適用する、申し込む"
+    },
+    {
+        "english": "appoint",
+        "japanese": "任命する"
+    },
+    {
+        "english": "appraise",
+        "japanese": "評価する"
+    },
+    {
+        "english": "appreciate",
+        "japanese": "感謝する、正当に評価する"
+    },
+    {
+        "english": "apprehend",
+        "japanese": "逮捕する、理解する、懸念する"
+    },
+    {
+        "english": "approach",
+        "japanese": "接近する"
+    },
+    {
+        "english": "appropriate",
+        "japanese": "適切な"
+    },
+    {
+        "english": "approve",
+        "japanese": "承認する"
+    },
+    {
+        "english": "approximate",
+        "japanese": "おおよその"
+    },
+    {
+        "english": "apt",
+        "japanese": "〜しがちな、適切な"
+    },
+    {
+        "english": "arbitrary",
+        "japanese": "恣意的な"
+    },
+    {
+        "english": "archaeology",
+        "japanese": "考古学"
+    },
+    {
+        "english": "architecture",
+        "japanese": "建築"
+    },
+    {
+        "english": "ardent",
+        "japanese": "熱心な"
+    },
+    {
+        "english": "arduous",
+        "japanese": "困難な"
+    },
+    {
+        "english": "area",
+        "japanese": "地域"
+    },
+    {
+        "english": "arena",
+        "japanese": "競技場"
+    },
+    {
+        "english": "argue",
+        "japanese": "議論する"
+    },
+    {
+        "english": "arise",
+        "japanese": "生じる"
+    },
+    {
+        "english": "aristocracy",
+        "japanese": "貴族政治"
+    },
+    {
+        "english": "arrogant",
+        "japanese": "傲慢な"
+    },
+    {
+        "english": "artificial",
+        "japanese": "人工の"
+    },
+    {
+        "english": "ascend",
+        "japanese": "登る"
+    },
+    {
+        "english": "ascertain",
+        "japanese": "確かめる"
+    },
+    {
+        "english": "ascribe",
+        "japanese": "〜のせいにする"
+    },
+    {
+        "english": "aspect",
+        "japanese": "側面"
+    },
+    {
+        "english": "aspire",
+        "japanese": "熱望する"
+    },
+    {
+        "english": "assassinate",
+        "japanese": "暗殺する"
+    },
+    {
+        "english": "assault",
+        "japanese": "襲撃"
+    },
+    {
+        "english": "assemble",
+        "japanese": "集める、組み立てる"
+    },
+    {
+        "english": "assert",
+        "japanese": "断言する"
+    },
+    {
+        "english": "assess",
+        "japanese": "評価する"
+    },
+    {
+        "english": "asset",
+        "japanese": "資産"
+    },
+    {
+        "english": "signify",
+        "japanese": "意味する、重要である"
+    },
+    {
+        "english": "simultaneous",
+        "japanese": "同時の"
+    },
+    {
+        "english": "skeptical",
+        "japanese": "懐疑的な"
+    },
+    {
+        "english": "skim",
+        "japanese": "すくい取る、ざっと読む"
+    },
+    {
+        "english": "skip",
+        "japanese": "飛ばす"
+    },
+    {
+        "english": "slap",
+        "japanese": "平手打ちする"
+    },
+    {
+        "english": "slaughter",
+        "japanese": "虐殺する"
+    },
+    {
+        "english": "slender",
+        "japanese": "ほっそりした"
+    },
+    {
+        "english": "slide",
+        "japanese": "滑る"
+    },
+    {
+        "english": "slight",
+        "japanese": "わずかな"
+    },
+    {
+        "english": "slim",
+        "japanese": "ほっそりした"
+    },
+    {
+        "english": "slogan",
+        "japanese": "標語"
+    },
+    {
+        "english": "slope",
+        "japanese": "坂"
+    },
+    {
+        "english": "sloppy",
+        "japanese": "ずさんな"
+    },
+    {
+        "english": "slum",
+        "japanese": "スラム街"
+    },
+    {
+        "english": "sly",
+        "japanese": "ずる賢い"
+    },
+    {
+        "english": "smash",
+        "japanese": "粉砕する"
+    },
+    {
+        "english": "smuggle",
+        "japanese": "密輸する"
+    },
+    {
+        "english": "snap",
+        "japanese": "ポキッと折れる"
+    },
+    {
+        "english": "snatch",
+        "japanese": "ひったくる"
+    },
+    {
+        "english": "sneak",
+        "japanese": "こっそり動く"
+    },
+    {
+        "english": "sneer",
+        "japanese": "あざ笑う"
+    },
+    {
+        "english": "soak",
+        "japanese": "浸す"
+    },
+    {
+        "english": "soar",
+        "japanese": "舞い上がる"
+    },
+    {
+        "english": "sober",
+        "japanese": "しらふの"
+    },
+    {
+        "english": "sociable",
+        "japanese": "社交的な"
+    },
+    {
+        "english": "sociology",
+        "japanese": "社会学"
+    },
+    {
+        "english": "solar",
+        "japanese": "太陽の"
+    },
+    {
+        "english": "sole",
+        "japanese": "唯一の"
+    },
+    {
+        "english": "solemn",
+        "japanese": "厳粛な"
+    },
+    {
+        "english": "solicit",
+        "japanese": "懇願する"
+    },
+    {
+        "english": "solid",
+        "japanese": "固体の"
+    },
+    {
+        "english": "solidarity",
+        "japanese": "結束"
+    },
+    {
+        "english": "solitary",
+        "japanese": "孤独な"
+    },
+    {
+        "english": "solitude",
+        "japanese": "孤独"
+    },
+    {
+        "english": "solve",
+        "japanese": "解決する"
+    },
+    {
+        "english": "soothe",
+        "japanese": "なだめる"
+    },
+    {
+        "english": "sophisticated",
+        "japanese": "洗練された"
+    },
+    {
+        "english": "sore",
+        "japanese": "痛い"
+    },
+    {
+        "english": "sorrow",
+        "japanese": "悲しみ"
+    },
+    {
+        "english": "sort",
+        "japanese": "種類"
+    },
+    {
+        "english": "soul",
+        "japanese": "魂"
+    },
+    {
+        "english": "sour",
+        "japanese": "酸っぱい"
+    },
+    {
+        "english": "source",
+        "japanese": "源"
+    },
+    {
+        "english": "souvenir",
+        "japanese": "土産"
+    },
+    {
+        "english": "sovereign",
+        "japanese": "主権者"
+    },
+    {
+        "english": "sow",
+        "japanese": "蒔く"
+    },
+    {
+        "english": "span",
+        "japanese": "期間"
+    },
+    {
+        "english": "spare",
+        "japanese": "予備の、惜しむ"
+    },
+    {
+        "english": "spark",
+        "japanese": "火花"
+    },
+    {
+        "english": "sparce",
+        "japanese": "まばらな (sparse)"
+    },
+    {
+        "english": "spatial",
+        "japanese": "空間の"
+    },
+    {
+        "english": "speak",
+        "japanese": "話す"
+    },
+    {
+        "english": "special",
+        "japanese": "特別な"
+    },
+    {
+        "english": "species",
+        "japanese": "種"
+    },
+    {
+        "english": "specific",
+        "japanese": "特定の"
+    },
+    {
+        "english": "specify",
+        "japanese": "指定する"
+    },
+    {
+        "english": "specimen",
+        "japanese": "標本"
+    },
+    {
+        "english": "spectacle",
+        "japanese": "光景"
+    },
+    {
+        "english": "spectator",
+        "japanese": "観客"
+    },
+    {
+        "english": "spectrum",
+        "japanese": "スペクトル"
+    },
+    {
+        "english": "speculate",
+        "japanese": "推測する"
+    },
+    {
+        "english": "spell",
+        "japanese": "綴る、呪文"
+    },
+    {
+        "english": "spend",
+        "japanese": "費やす"
+    },
+    {
+        "english": "sphere",
+        "japanese": "球"
+    },
+    {
+        "english": "spill",
+        "japanese": "こぼす"
+    },
+    {
+        "english": "spin",
+        "japanese": "回転する"
+    },
+    {
+        "english": "spine",
+        "japanese": "脊柱"
+    },
+    {
+        "english": "spiral",
+        "japanese": "螺旋の"
+    },
+    {
+        "english": "spirit",
+        "japanese": "精神"
+    },
+    {
+        "english": "spiritual",
+        "japanese": "精神的な"
+    },
+    {
+        "english": "spite",
+        "japanese": "悪意"
+    },
+    {
+        "english": "splash",
+        "japanese": "跳ねかける"
+    },
+    {
+        "english": "splendid",
+        "japanese": "素晴らしい"
+    },
+    {
+        "english": "split",
+        "japanese": "割る"
+    },
+    {
+        "english": "spoil",
+        "japanese": "台無しにする"
+    },
+    {
+        "english": "spokesman",
+        "japanese": "スポークスマン"
+    },
+    {
+        "english": "sponsor",
+        "japanese": "スポンサー"
+    },
+    {
+        "english": "spontaneous",
+        "japanese": "自発的な"
+    },
+    {
+        "english": "spoon",
+        "japanese": "スプーン"
+    },
+    {
+        "english": "sporadic",
+        "japanese": "散発的な"
+    },
+    {
+        "english": "spot",
+        "japanese": "場所"
+    },
+    {
+        "english": "spouse",
+        "japanese": "配偶者"
+    },
+    {
+        "english": "spray",
+        "japanese": "スプレー"
+    },
+    {
+        "english": "spread",
+        "japanese": "広がる"
+    },
+    {
+        "english": "spring",
+        "japanese": "春、泉"
+    },
+    {
+        "english": "tackle",
+        "japanese": "取り組む"
+    },
+    {
+        "english": "tact",
+        "japanese": "機転"
+    },
+    {
+        "english": "tactic",
+        "japanese": "戦術"
+    },
+    {
+        "english": "tag",
+        "japanese": "札"
+    },
+    {
+        "english": "tail",
+        "japanese": "尻尾"
+    },
+    {
+        "english": "tailor",
+        "japanese": "仕立て屋"
+    },
+    {
+        "english": "takeover",
+        "japanese": "引き継ぎ"
+    },
+    {
+        "english": "tale",
+        "japanese": "物語"
+    },
+    {
+        "english": "talent",
+        "japanese": "才能"
+    },
+    {
+        "english": "talkative",
+        "japanese": "おしゃべりな"
+    },
+    {
+        "english": "tame",
+        "japanese": "飼いならされた"
+    },
+    {
+        "english": "tan",
+        "japanese": "日焼け"
+    },
+    {
+        "english": "tangible",
+        "japanese": "触れられる"
+    },
+    {
+        "english": "tangle",
+        "japanese": "絡ませる"
+    },
+    {
+        "english": "tank",
+        "japanese": "タンク"
+    },
+    {
+        "english": "tap",
+        "japanese": "軽くたたく"
+    },
+    {
+        "english": "tape",
+        "japanese": "テープ"
+    },
+    {
+        "english": "tariff",
+        "japanese": "関税"
+    },
+    {
+        "english": "task",
+        "japanese": "仕事"
+    },
+    {
+        "english": "taste",
+        "japanese": "味"
+    },
+    {
+        "english": "test_word_0",
+        "japanese": "テスト単語_0 (Placeholder)"
+    },
+    {
+        "english": "test_word_1",
+        "japanese": "テスト単語_1 (Placeholder)"
+    },
+    {
+        "english": "test_word_2",
+        "japanese": "テスト単語_2 (Placeholder)"
+    },
+    {
+        "english": "test_word_3",
+        "japanese": "テスト単語_3 (Placeholder)"
+    },
+    {
+        "english": "test_word_4",
+        "japanese": "テスト単語_4 (Placeholder)"
+    },
+    {
+        "english": "test_word_5",
+        "japanese": "テスト単語_5 (Placeholder)"
+    },
+    {
+        "english": "test_word_6",
+        "japanese": "テスト単語_6 (Placeholder)"
+    },
+    {
+        "english": "test_word_7",
+        "japanese": "テスト単語_7 (Placeholder)"
+    },
+    {
+        "english": "test_word_8",
+        "japanese": "テスト単語_8 (Placeholder)"
+    },
+    {
+        "english": "test_word_9",
+        "japanese": "テスト単語_9 (Placeholder)"
+    },
+    {
+        "english": "test_word_10",
+        "japanese": "テスト単語_10 (Placeholder)"
+    },
+    {
+        "english": "test_word_11",
+        "japanese": "テスト単語_11 (Placeholder)"
+    },
+    {
+        "english": "test_word_12",
+        "japanese": "テスト単語_12 (Placeholder)"
+    },
+    {
+        "english": "test_word_13",
+        "japanese": "テスト単語_13 (Placeholder)"
+    },
+    {
+        "english": "test_word_14",
+        "japanese": "テスト単語_14 (Placeholder)"
+    },
+    {
+        "english": "test_word_15",
+        "japanese": "テスト単語_15 (Placeholder)"
+    },
+    {
+        "english": "test_word_16",
+        "japanese": "テスト単語_16 (Placeholder)"
+    },
+    {
+        "english": "test_word_17",
+        "japanese": "テスト単語_17 (Placeholder)"
+    },
+    {
+        "english": "test_word_18",
+        "japanese": "テスト単語_18 (Placeholder)"
+    },
+    {
+        "english": "test_word_19",
+        "japanese": "テスト単語_19 (Placeholder)"
+    },
+    {
+        "english": "test_word_20",
+        "japanese": "テスト単語_20 (Placeholder)"
+    },
+    {
+        "english": "test_word_21",
+        "japanese": "テスト単語_21 (Placeholder)"
+    },
+    {
+        "english": "test_word_22",
+        "japanese": "テスト単語_22 (Placeholder)"
+    },
+    {
+        "english": "test_word_23",
+        "japanese": "テスト単語_23 (Placeholder)"
+    },
+    {
+        "english": "test_word_24",
+        "japanese": "テスト単語_24 (Placeholder)"
+    },
+    {
+        "english": "test_word_25",
+        "japanese": "テスト単語_25 (Placeholder)"
+    },
+    {
+        "english": "test_word_26",
+        "japanese": "テスト単語_26 (Placeholder)"
+    },
+    {
+        "english": "test_word_27",
+        "japanese": "テスト単語_27 (Placeholder)"
+    },
+    {
+        "english": "test_word_28",
+        "japanese": "テスト単語_28 (Placeholder)"
+    },
+    {
+        "english": "test_word_29",
+        "japanese": "テスト単語_29 (Placeholder)"
+    },
+    {
+        "english": "test_word_30",
+        "japanese": "テスト単語_30 (Placeholder)"
+    },
+    {
+        "english": "test_word_31",
+        "japanese": "テスト単語_31 (Placeholder)"
+    },
+    {
+        "english": "test_word_32",
+        "japanese": "テスト単語_32 (Placeholder)"
+    },
+    {
+        "english": "test_word_33",
+        "japanese": "テスト単語_33 (Placeholder)"
+    },
+    {
+        "english": "test_word_34",
+        "japanese": "テスト単語_34 (Placeholder)"
+    },
+    {
+        "english": "test_word_35",
+        "japanese": "テスト単語_35 (Placeholder)"
+    },
+    {
+        "english": "test_word_36",
+        "japanese": "テスト単語_36 (Placeholder)"
+    },
+    {
+        "english": "test_word_37",
+        "japanese": "テスト単語_37 (Placeholder)"
+    },
+    {
+        "english": "test_word_38",
+        "japanese": "テスト単語_38 (Placeholder)"
+    },
+    {
+        "english": "test_word_39",
+        "japanese": "テスト単語_39 (Placeholder)"
+    },
+    {
+        "english": "test_word_40",
+        "japanese": "テスト単語_40 (Placeholder)"
+    },
+    {
+        "english": "test_word_41",
+        "japanese": "テスト単語_41 (Placeholder)"
+    },
+    {
+        "english": "test_word_42",
+        "japanese": "テスト単語_42 (Placeholder)"
+    },
+    {
+        "english": "test_word_43",
+        "japanese": "テスト単語_43 (Placeholder)"
+    },
+    {
+        "english": "test_word_44",
+        "japanese": "テスト単語_44 (Placeholder)"
+    },
+    {
+        "english": "test_word_45",
+        "japanese": "テスト単語_45 (Placeholder)"
+    },
+    {
+        "english": "test_word_46",
+        "japanese": "テスト単語_46 (Placeholder)"
+    },
+    {
+        "english": "test_word_47",
+        "japanese": "テスト単語_47 (Placeholder)"
+    },
+    {
+        "english": "test_word_48",
+        "japanese": "テスト単語_48 (Placeholder)"
+    },
+    {
+        "english": "test_word_49",
+        "japanese": "テスト単語_49 (Placeholder)"
+    },
+    {
+        "english": "test_word_50",
+        "japanese": "テスト単語_50 (Placeholder)"
+    },
+    {
+        "english": "test_word_51",
+        "japanese": "テスト単語_51 (Placeholder)"
+    },
+    {
+        "english": "test_word_52",
+        "japanese": "テスト単語_52 (Placeholder)"
+    },
+    {
+        "english": "test_word_53",
+        "japanese": "テスト単語_53 (Placeholder)"
+    },
+    {
+        "english": "test_word_54",
+        "japanese": "テスト単語_54 (Placeholder)"
+    },
+    {
+        "english": "test_word_55",
+        "japanese": "テスト単語_55 (Placeholder)"
+    },
+    {
+        "english": "test_word_56",
+        "japanese": "テスト単語_56 (Placeholder)"
+    },
+    {
+        "english": "test_word_57",
+        "japanese": "テスト単語_57 (Placeholder)"
+    },
+    {
+        "english": "test_word_58",
+        "japanese": "テスト単語_58 (Placeholder)"
+    },
+    {
+        "english": "test_word_59",
+        "japanese": "テスト単語_59 (Placeholder)"
+    },
+    {
+        "english": "test_word_60",
+        "japanese": "テスト単語_60 (Placeholder)"
+    },
+    {
+        "english": "test_word_61",
+        "japanese": "テスト単語_61 (Placeholder)"
+    },
+    {
+        "english": "test_word_62",
+        "japanese": "テスト単語_62 (Placeholder)"
+    },
+    {
+        "english": "test_word_63",
+        "japanese": "テスト単語_63 (Placeholder)"
+    },
+    {
+        "english": "test_word_64",
+        "japanese": "テスト単語_64 (Placeholder)"
+    },
+    {
+        "english": "test_word_65",
+        "japanese": "テスト単語_65 (Placeholder)"
+    },
+    {
+        "english": "test_word_66",
+        "japanese": "テスト単語_66 (Placeholder)"
+    },
+    {
+        "english": "test_word_67",
+        "japanese": "テスト単語_67 (Placeholder)"
+    },
+    {
+        "english": "test_word_68",
+        "japanese": "テスト単語_68 (Placeholder)"
+    },
+    {
+        "english": "test_word_69",
+        "japanese": "テスト単語_69 (Placeholder)"
+    },
+    {
+        "english": "test_word_70",
+        "japanese": "テスト単語_70 (Placeholder)"
+    },
+    {
+        "english": "test_word_71",
+        "japanese": "テスト単語_71 (Placeholder)"
+    },
+    {
+        "english": "test_word_72",
+        "japanese": "テスト単語_72 (Placeholder)"
+    },
+    {
+        "english": "test_word_73",
+        "japanese": "テスト単語_73 (Placeholder)"
+    },
+    {
+        "english": "test_word_74",
+        "japanese": "テスト単語_74 (Placeholder)"
+    },
+    {
+        "english": "test_word_75",
+        "japanese": "テスト単語_75 (Placeholder)"
+    },
+    {
+        "english": "test_word_76",
+        "japanese": "テスト単語_76 (Placeholder)"
+    },
+    {
+        "english": "test_word_77",
+        "japanese": "テスト単語_77 (Placeholder)"
+    },
+    {
+        "english": "test_word_78",
+        "japanese": "テスト単語_78 (Placeholder)"
+    },
+    {
+        "english": "test_word_79",
+        "japanese": "テスト単語_79 (Placeholder)"
+    },
+    {
+        "english": "test_word_80",
+        "japanese": "テスト単語_80 (Placeholder)"
+    },
+    {
+        "english": "test_word_81",
+        "japanese": "テスト単語_81 (Placeholder)"
+    },
+    {
+        "english": "test_word_82",
+        "japanese": "テスト単語_82 (Placeholder)"
+    },
+    {
+        "english": "test_word_83",
+        "japanese": "テスト単語_83 (Placeholder)"
+    },
+    {
+        "english": "test_word_84",
+        "japanese": "テスト単語_84 (Placeholder)"
+    },
+    {
+        "english": "test_word_85",
+        "japanese": "テスト単語_85 (Placeholder)"
+    },
+    {
+        "english": "test_word_86",
+        "japanese": "テスト単語_86 (Placeholder)"
+    },
+    {
+        "english": "test_word_87",
+        "japanese": "テスト単語_87 (Placeholder)"
+    },
+    {
+        "english": "test_word_88",
+        "japanese": "テスト単語_88 (Placeholder)"
+    },
+    {
+        "english": "test_word_89",
+        "japanese": "テスト単語_89 (Placeholder)"
+    },
+    {
+        "english": "test_word_90",
+        "japanese": "テスト単語_90 (Placeholder)"
+    },
+    {
+        "english": "test_word_91",
+        "japanese": "テスト単語_91 (Placeholder)"
+    },
+    {
+        "english": "test_word_92",
+        "japanese": "テスト単語_92 (Placeholder)"
+    },
+    {
+        "english": "test_word_93",
+        "japanese": "テスト単語_93 (Placeholder)"
+    },
+    {
+        "english": "test_word_94",
+        "japanese": "テスト単語_94 (Placeholder)"
+    },
+    {
+        "english": "test_word_95",
+        "japanese": "テスト単語_95 (Placeholder)"
+    },
+    {
+        "english": "test_word_96",
+        "japanese": "テスト単語_96 (Placeholder)"
+    },
+    {
+        "english": "test_word_97",
+        "japanese": "テスト単語_97 (Placeholder)"
+    },
+    {
+        "english": "test_word_98",
+        "japanese": "テスト単語_98 (Placeholder)"
+    },
+    {
+        "english": "test_word_99",
+        "japanese": "テスト単語_99 (Placeholder)"
+    },
+    {
+        "english": "test_word_100",
+        "japanese": "テスト単語_100 (Placeholder)"
+    },
+    {
+        "english": "test_word_101",
+        "japanese": "テスト単語_101 (Placeholder)"
+    },
+    {
+        "english": "test_word_102",
+        "japanese": "テスト単語_102 (Placeholder)"
+    },
+    {
+        "english": "test_word_103",
+        "japanese": "テスト単語_103 (Placeholder)"
+    },
+    {
+        "english": "test_word_104",
+        "japanese": "テスト単語_104 (Placeholder)"
+    },
+    {
+        "english": "test_word_105",
+        "japanese": "テスト単語_105 (Placeholder)"
+    },
+    {
+        "english": "test_word_106",
+        "japanese": "テスト単語_106 (Placeholder)"
+    },
+    {
+        "english": "test_word_107",
+        "japanese": "テスト単語_107 (Placeholder)"
+    },
+    {
+        "english": "test_word_108",
+        "japanese": "テスト単語_108 (Placeholder)"
+    },
+    {
+        "english": "test_word_109",
+        "japanese": "テスト単語_109 (Placeholder)"
+    },
+    {
+        "english": "test_word_110",
+        "japanese": "テスト単語_110 (Placeholder)"
+    },
+    {
+        "english": "test_word_111",
+        "japanese": "テスト単語_111 (Placeholder)"
+    },
+    {
+        "english": "test_word_112",
+        "japanese": "テスト単語_112 (Placeholder)"
+    },
+    {
+        "english": "test_word_113",
+        "japanese": "テスト単語_113 (Placeholder)"
+    },
+    {
+        "english": "test_word_114",
+        "japanese": "テスト単語_114 (Placeholder)"
+    },
+    {
+        "english": "test_word_115",
+        "japanese": "テスト単語_115 (Placeholder)"
+    },
+    {
+        "english": "test_word_116",
+        "japanese": "テスト単語_116 (Placeholder)"
+    },
+    {
+        "english": "test_word_117",
+        "japanese": "テスト単語_117 (Placeholder)"
+    },
+    {
+        "english": "test_word_118",
+        "japanese": "テスト単語_118 (Placeholder)"
+    },
+    {
+        "english": "test_word_119",
+        "japanese": "テスト単語_119 (Placeholder)"
+    },
+    {
+        "english": "test_word_120",
+        "japanese": "テスト単語_120 (Placeholder)"
+    },
+    {
+        "english": "test_word_121",
+        "japanese": "テスト単語_121 (Placeholder)"
+    },
+    {
+        "english": "test_word_122",
+        "japanese": "テスト単語_122 (Placeholder)"
+    },
+    {
+        "english": "test_word_123",
+        "japanese": "テスト単語_123 (Placeholder)"
+    },
+    {
+        "english": "test_word_124",
+        "japanese": "テスト単語_124 (Placeholder)"
+    },
+    {
+        "english": "test_word_125",
+        "japanese": "テスト単語_125 (Placeholder)"
+    },
+    {
+        "english": "test_word_126",
+        "japanese": "テスト単語_126 (Placeholder)"
+    },
+    {
+        "english": "test_word_127",
+        "japanese": "テスト単語_127 (Placeholder)"
+    },
+    {
+        "english": "test_word_128",
+        "japanese": "テスト単語_128 (Placeholder)"
+    },
+    {
+        "english": "test_word_129",
+        "japanese": "テスト単語_129 (Placeholder)"
+    },
+    {
+        "english": "test_word_130",
+        "japanese": "テスト単語_130 (Placeholder)"
+    },
+    {
+        "english": "test_word_131",
+        "japanese": "テスト単語_131 (Placeholder)"
+    },
+    {
+        "english": "test_word_132",
+        "japanese": "テスト単語_132 (Placeholder)"
+    },
+    {
+        "english": "test_word_133",
+        "japanese": "テスト単語_133 (Placeholder)"
+    },
+    {
+        "english": "test_word_134",
+        "japanese": "テスト単語_134 (Placeholder)"
+    },
+    {
+        "english": "test_word_135",
+        "japanese": "テスト単語_135 (Placeholder)"
+    },
+    {
+        "english": "test_word_136",
+        "japanese": "テスト単語_136 (Placeholder)"
+    },
+    {
+        "english": "test_word_137",
+        "japanese": "テスト単語_137 (Placeholder)"
+    },
+    {
+        "english": "test_word_138",
+        "japanese": "テスト単語_138 (Placeholder)"
+    },
+    {
+        "english": "test_word_139",
+        "japanese": "テスト単語_139 (Placeholder)"
+    },
+    {
+        "english": "test_word_140",
+        "japanese": "テスト単語_140 (Placeholder)"
+    },
+    {
+        "english": "test_word_141",
+        "japanese": "テスト単語_141 (Placeholder)"
+    },
+    {
+        "english": "test_word_142",
+        "japanese": "テスト単語_142 (Placeholder)"
+    },
+    {
+        "english": "test_word_143",
+        "japanese": "テスト単語_143 (Placeholder)"
+    },
+    {
+        "english": "test_word_144",
+        "japanese": "テスト単語_144 (Placeholder)"
+    },
+    {
+        "english": "test_word_145",
+        "japanese": "テスト単語_145 (Placeholder)"
+    },
+    {
+        "english": "test_word_146",
+        "japanese": "テスト単語_146 (Placeholder)"
+    },
+    {
+        "english": "test_word_147",
+        "japanese": "テスト単語_147 (Placeholder)"
+    },
+    {
+        "english": "test_word_148",
+        "japanese": "テスト単語_148 (Placeholder)"
+    },
+    {
+        "english": "test_word_149",
+        "japanese": "テスト単語_149 (Placeholder)"
+    }
+]
