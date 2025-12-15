@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Timer } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { db } from '../db';
 
 type Word = {
     word: string;
@@ -9,8 +10,9 @@ type Word = {
 };
 
 type QuestionType = 'en_to_jp' | 'jp_to_en';
+type Source = 'standard' | 'captured';
 
-export default function BattleScreen({ onEnd }: { onEnd: (score: number) => void }) {
+export default function BattleScreen({ onEnd, source }: { onEnd: (score: number) => void, source: Source }) {
     const [words, setWords] = useState<Word[]>([]);
     const [loading, setLoading] = useState(true);
     const [timeLeft, setTimeLeft] = useState(60);
@@ -18,35 +20,49 @@ export default function BattleScreen({ onEnd }: { onEnd: (score: number) => void
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const [input, setInput] = useState('');
     const [shake, setShake] = useState(false);
-
-    // Determine question type for the current word. 
-    // We can deterministically derive this from the index or just randomize it. 
-    // To ensure consistency during a session for a specific word instance, let's use a stored state or derived value.
-    // For simplicity and "battle" feel, we'll randomize it per word instance.
     const [questionType, setQuestionType] = useState<QuestionType>('jp_to_en');
 
     useEffect(() => {
-        fetch('/word.json')
-            .then(res => res.json())
-            .then((data: any[]) => {
-                // Limit to first 218 items
-                const limitedData = data.slice(0, 218).map(item => ({
-                    word: item.english,
-                    meaning: item.japanese,
-                    meaningList: item.japanese.split('、').map((m: string) => m.trim())
-                }));
+        const loadWords = async () => {
+            try {
+                let loadedWords: Word[] = [];
+
+                if (source === 'standard') {
+                    const res = await fetch('/word.json');
+                    const data = await res.json();
+                    // Limit to first 218 items
+                    loadedWords = data.slice(0, 218).map((item: any) => ({
+                        word: item.english,
+                        meaning: item.japanese,
+                        meaningList: item.japanese.split('、').map((m: string) => m.trim())
+                    }));
+                } else {
+                    const data = await db.capturedWords.toArray();
+                    loadedWords = data.map(item => ({
+                        word: item.word,
+                        meaning: item.meaning,
+                        meaningList: item.meaning.split('、').map((m: string) => m.trim())
+                    }));
+                }
+
+                if (loadedWords.length === 0) {
+                    console.warn("No words found for source:", source);
+                }
+
                 // Shuffle words for randomness
-                const shuffled = limitedData.sort(() => Math.random() - 0.5);
+                const shuffled = loadedWords.sort(() => Math.random() - 0.5);
                 setWords(shuffled);
                 setLoading(false);
                 // Set initial question type
                 setQuestionType(Math.random() > 0.5 ? 'en_to_jp' : 'jp_to_en');
-            })
-            .catch(err => {
+            } catch (err) {
                 console.error('Failed to load words:', err);
                 setLoading(false);
-            });
-    }, []);
+            }
+        };
+
+        loadWords();
+    }, [source]);
 
     useEffect(() => {
         if (loading || words.length === 0) return;
