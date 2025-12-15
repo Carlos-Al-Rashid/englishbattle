@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Timer } from 'lucide-react';
+import { Timer, Loader2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { db } from '../db';
+import { getOptionsForWord } from '../services/optionGenerator';
 
 type Word = {
     word: string;
@@ -15,12 +16,15 @@ type Source = 'standard' | 'captured';
 export default function BattleScreen({ onEnd, source }: { onEnd: (score: number) => void, source: Source }) {
     const [words, setWords] = useState<Word[]>([]);
     const [loading, setLoading] = useState(true);
+    const [generatingOptions, setGeneratingOptions] = useState(false);
     const [timeLeft, setTimeLeft] = useState(60);
     const [score, setScore] = useState(0);
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
-    const [input, setInput] = useState('');
     const [shake, setShake] = useState(false);
-    const [questionType, setQuestionType] = useState<QuestionType>('jp_to_en');
+
+    // Mainly En -> Jp (See English, Choose Japanese) as requested
+    const [questionType, setQuestionType] = useState<QuestionType>('en_to_jp');
+    const [options, setOptions] = useState<string[]>([]);
 
     useEffect(() => {
         const loadWords = async () => {
@@ -53,8 +57,6 @@ export default function BattleScreen({ onEnd, source }: { onEnd: (score: number)
                 const shuffled = loadedWords.sort(() => Math.random() - 0.5);
                 setWords(shuffled);
                 setLoading(false);
-                // Set initial question type
-                setQuestionType(Math.random() > 0.5 ? 'en_to_jp' : 'jp_to_en');
             } catch (err) {
                 console.error('Failed to load words:', err);
                 setLoading(false);
@@ -63,6 +65,8 @@ export default function BattleScreen({ onEnd, source }: { onEnd: (score: number)
 
         loadWords();
     }, [source]);
+
+
 
     useEffect(() => {
         if (loading || words.length === 0) return;
@@ -75,35 +79,63 @@ export default function BattleScreen({ onEnd, source }: { onEnd: (score: number)
         return () => clearInterval(timer);
     }, [timeLeft, onEnd, score, loading, words.length]);
 
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
+    // State for the current round's valid answer to avoid race conditions/re-derivation issues
+    const [currentCorrectAnswer, setCurrentCorrectAnswer] = useState<string>('');
+
+    // ...
+
+    // Prepare options when word changes
+    useEffect(() => {
         if (words.length === 0) return;
 
-        const currentWord = words[currentWordIndex % words.length];
-        let isCorrect = false;
+        const prepareOptions = async () => {
+            setGeneratingOptions(true);
+            const currentWord = words[currentWordIndex % words.length];
 
-        if (questionType === 'jp_to_en') {
-            // User sees Japanese, types English
-            if (input.trim().toLowerCase() === currentWord.word.toLowerCase()) {
-                isCorrect = true;
-            }
-        } else {
-            // User sees English, types Japanese
-            // Check if input matches ONE of the meanings exactly
-            if (currentWord.meaningList.includes(input.trim())) {
-                isCorrect = true;
-            }
-        }
+            const nextQuestionType = Math.random() > 0.2 ? 'en_to_jp' : 'jp_to_en';
+            setQuestionType(nextQuestionType);
 
-        if (isCorrect) {
+            try {
+                // Determine correct answer string immediately
+                const correctStr = nextQuestionType === 'en_to_jp' ? currentWord.meaning : currentWord.word;
+                setCurrentCorrectAnswer(correctStr);
+
+                // Try to get GPT generated options
+                let distractors = await getOptionsForWord(currentWord.word, currentWord.meaning, nextQuestionType);
+
+                // Fallback if no API key or error
+                if (distractors.length === 0) {
+                    const otherWords = words.filter(w => w.word !== currentWord.word);
+                    const randomOthers = otherWords.sort(() => Math.random() - 0.5).slice(0, 3);
+                    distractors = randomOthers.map(w => nextQuestionType === 'en_to_jp' ? w.meaning : w.word);
+                }
+
+                const allOptions = [...distractors, correctStr].sort(() => Math.random() - 0.5);
+
+                setOptions(allOptions);
+            } catch (e) {
+                console.error(e);
+            } finally {
+                setGeneratingOptions(false);
+            }
+        };
+
+        prepareOptions();
+    }, [currentWordIndex, words]); // Removed questionType dependency
+
+    // ...
+
+    const handleOptionClick = (selectedOption: string) => {
+        if (generatingOptions) return;
+
+        if (selectedOption === currentCorrectAnswer) {
             setScore(s => s + 10 + Math.ceil(timeLeft / 10)); // Bonus for speed
             setCurrentWordIndex(i => i + 1);
-            setInput('');
-            // Randomize next question type
-            setQuestionType(Math.random() > 0.5 ? 'en_to_jp' : 'jp_to_en');
         } else {
             setShake(true);
             setTimeout(() => setShake(false), 500);
+            // Optionally penalize time
+            setTimeLeft(prev => Math.max(0, prev - 5));
         }
     };
 
@@ -112,7 +144,7 @@ export default function BattleScreen({ onEnd, source }: { onEnd: (score: number)
     }
 
     if (words.length === 0) {
-        return <div className="text-white text-2xl text-center pt-20">No words found or error loading words.</div>;
+        return <div className="text-white text-2xl text-center pt-20">No words found. Add some words first!</div>;
     }
 
     const currentWord = words[currentWordIndex % words.length];
@@ -132,35 +164,41 @@ export default function BattleScreen({ onEnd, source }: { onEnd: (score: number)
             <div className="text-center space-y-12">
                 <AnimatePresence mode="wait">
                     <motion.div
-                        key={`${currentWord.word}-${questionType}`}
+                        key={`${currentWord.word}-${currentWordIndex}`}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
                         className="space-y-4"
                     >
                         <h2 className="text-6xl font-black tracking-tight text-white drop-shadow-lg">
-                            {questionType === 'jp_to_en' ? currentWord.meaning : currentWord.word}
+                            {questionType === 'en_to_jp' ? currentWord.word : currentWord.meaning}
                         </h2>
                         <p className="text-xl text-gray-400 italic">
-                            {questionType === 'jp_to_en' ? 'Type the English word' : '日本語で意味を入力'}
+                            {questionType === 'en_to_jp' ? 'Choose the correct meaning' : 'Choose the correct word'}
                         </p>
                     </motion.div>
                 </AnimatePresence>
 
-                <motion.form
-                    onSubmit={handleSubmit}
-                    animate={shake ? { x: [-10, 10, -10, 10, 0] } : {}}
-                    className="relative max-w-lg mx-auto"
-                >
-                    <input
-                        autoFocus
-                        type="text"
-                        value={input}
-                        onChange={(e) => setInput(e.target.value)}
-                        className="w-full bg-gray-800/50 border-2 border-gray-600 rounded-xl p-6 text-center text-3xl font-bold tracking-wider focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 focus:outline-none transition-all placeholder-gray-600"
-                        placeholder={questionType === 'jp_to_en' ? "Type in English..." : "日本語で入力..."}
-                    />
-                </motion.form>
+                {generatingOptions ? (
+                    <div className="flex justify-center py-12">
+                        <Loader2 className="w-8 h-8 animate-spin text-blue-500" />
+                    </div>
+                ) : (
+                    <motion.div
+                        className="grid grid-cols-1 md:grid-cols-2 gap-4"
+                        animate={shake ? { x: [-10, 10, -10, 10, 0] } : {}}
+                    >
+                        {options.map((option, idx) => (
+                            <button
+                                key={idx}
+                                onClick={() => handleOptionClick(option)}
+                                className="p-6 bg-gray-800/80 hover:bg-blue-600/80 border-2 border-gray-600 hover:border-blue-400 rounded-xl text-xl font-bold transition-all transform hover:-translate-y-1 active:scale-95 text-white shadow-lg"
+                            >
+                                {option}
+                            </button>
+                        ))}
+                    </motion.div>
+                )}
             </div>
         </div>
     );

@@ -1,8 +1,8 @@
 import { useState, useRef } from 'react';
-import Tesseract from 'tesseract.js';
 import { db } from '../db';
 import { Camera, Save, X, Plus, Trash2, ArrowLeft, Loader2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { processImageWithGPT } from '../services/imageProcessor';
 
 type CandidateWord = {
     id: string; // temp id
@@ -31,40 +31,21 @@ export default function CaptureScreen({ onBack }: { onBack: () => void }) {
     const processImage = async () => {
         if (!image) return;
         setProcessing(true);
-        setProgress(0);
+        setProgress(0); // GPT doesn't give granular progress, so we'll just show spinner
 
         try {
-            const result = await Tesseract.recognize(
-                image,
-                'eng',
-                {
-                    logger: m => {
-                        if (m.status === 'recognizing text') {
-                            setProgress(Math.round(m.progress * 100));
-                        }
-                    }
-                }
-            );
+            const result = await processImageWithGPT(image);
 
-            // Extract words: simple split by whitespace and filter alphabetic
-            const text = result.data.text;
-            const foundWords = text
-                .split(/[\s\n]+/)
-                .map(w => w.replace(/[^a-zA-Z]/g, ''))
-                .filter(w => w.length > 2) // Filter very short noise
-                .map(w => ({
-                    id: crypto.randomUUID(),
-                    word: w.toLowerCase(),
-                    meaning: ''
-                }));
+            const foundWords = result.map(item => ({
+                id: crypto.randomUUID(),
+                word: item.word,
+                meaning: item.meaning
+            }));
 
-            // Deduplicate
-            const uniqueWords = Array.from(new Map(foundWords.map(item => [item.word, item])).values());
-
-            setCandidates(uniqueWords);
+            setCandidates(foundWords);
         } catch (error) {
             console.error(error);
-            alert('Failed to process image');
+            alert('Failed to process image with AI');
         } finally {
             setProcessing(false);
         }
