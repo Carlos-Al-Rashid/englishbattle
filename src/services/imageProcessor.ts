@@ -19,7 +19,7 @@ export async function processImageWithGPT(base64Image: string): Promise<{ word: 
                         content: [
                             {
                                 type: 'text',
-                                text: 'Identify all English vocabulary words in this image and their corresponding Japanese meanings. Output a JSON array of objects with "word" and "meaning" keys. Example: [{"word": "apple", "meaning": "りんご"}, ...]. Output ONLY the JSON.'
+                                text: 'Identify all English vocabulary words in this image and their corresponding Japanese meanings. If any word or meaning is unrecognizable, illegible, or appears to be nonsense, please reconstruct or correct it based on your knowledge to form a valid English-Japanese vocabulary pair. Output a JSON array of objects with "word" and "meaning" keys. Example: [{"word": "apple", "meaning": "りんご"}, ...]. Output ONLY the JSON.'
                             },
                             {
                                 type: 'image_url',

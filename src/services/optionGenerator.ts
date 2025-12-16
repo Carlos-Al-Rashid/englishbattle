@@ -36,8 +36,8 @@ export async function getOptionsForWord(
 
     try {
         const prompt = direction === 'en_to_jp'
-            ? `Generate 3 incorrect but plausible short Japanese meanings for the English word "${word}" (which actually means "${correctMeaning}"). Output ONLY the 3 meanings separated by a pipe character (|). Example format: 意味1|意味2|意味3`
-            : `Generate 3 incorrect but plausible English words that could be mistaken for the Japanese meaning "${correctMeaning}" (which actually corresponds to "${word}"). Output ONLY the 3 words separated by a pipe character (|). Example format: word1|word2|word3`;
+            ? `Generate 3 incorrect but plausible short Japanese meanings for the English word "${word}" (which actually means "${correctMeaning}"). IMPORTANT: Ensure that none of the generated options can be considered a correct translation or synonym of "${word}". Also ensure the 3 options are distinct from each other. All options must be real, valid Japanese words/phrases - do NOT create made-up or non-existent words. Output ONLY the 3 meanings separated by a pipe character (|). Example format: 意味1|意味2|意味3`
+            : `Generate 3 incorrect but plausible English words that could be mistaken for the Japanese meaning "${correctMeaning}" (which actually corresponds to "${word}"). IMPORTANT: Ensure that none of the generated options are synonyms or valid translations of "${correctMeaning}". Also ensure the 3 options are distinct from each other. All options must be real, valid English words that exist in the dictionary - do NOT create made-up, misspelled, or non-existent words (e.g., "identifacal" is NOT acceptable). Output ONLY the 3 words separated by a pipe character (|). Example format: word1|word2|word3`;
 
         const response = await axios.post(
             'https://api.openai.com/v1/chat/completions',
